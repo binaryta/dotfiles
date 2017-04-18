@@ -5,3 +5,5 @@ cp ./.vimrc ~/
 cp -r ./.bash ~/
 
 cp ./.bashrc ~/
+
+cp ./.screenrc ~/
