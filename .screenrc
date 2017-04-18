@@ -1,0 +1,26 @@
+#. .bashrc
+#. .bash_profile
+#. /etc/bash.bashrc
+#. /etc/bashrc
+
+
+# スクロールバッファを最大10000行にする
+defscrollback 10000
+shelltitle "$ |bash"
+
+
+# 別画面サポート。Vimやless使うときに便利
+altscreen on
+
+
+# ビジュアルベル（画面全体が点滅する）を切る
+vbell off
+
+
+# マウス操作に対応する
+termcapinfo xterm* ti@:te@
+
+
+# 画面下部に表示されるstatus
+caption always "%{= kw} %?%F%{b ky}%? %?%h%:%t (screen #%n)%? %{-}"
+hardstatus alwayslastline "%{= dw} %-Lw%40L>%{b kc} %n %t %{-}%+Lw%-040=%{.c} %Y/%m/%d %C:%s %A "
