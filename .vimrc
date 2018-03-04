@@ -1,10 +1,9 @@
-"augroup END
 augroup vimrcEx
   au BufRead * if line("'\"") > 0 && line("'\"") <= line("$") |
         \ exe "normal g`\"" | endif
 augroup END
 
-"dein setting"
+" - dein setting
 set runtimepath+=~/.vim/dein/repos/github.com/Shougo/dein.vim
 call dein#begin(expand('~/.vim/dein'))
   call dein#add('zchee/deoplete-clang')
@@ -29,7 +28,7 @@ call dein#begin(expand('~/.vim/dein'))
   call dein#add('tfnico/vim-gradle')
   "call dein#add('Shougo/vimproc.vim')
 
-  "== color schemes =="
+  " --- color schemes
   call dein#add('tomasr/molokai')
   call dein#add('Reewr/vim-monokai-phoenix')
   call dein#add('eduardoHoefel/matrix.vim')
@@ -40,10 +39,42 @@ if has('vim_starting') && dein#check_install()
   call dein#install()
 endif
 
-hi Visual cterm=bold
-autocmd ColorScheme * highlight Comment ctermfg=239 cterm=BOLD
-autocmd ColorScheme * highlight LineNr  ctermfg=239
-"autocmd FileType typescript setlocal completeopt+=menu,preview
+augroup fileTypeIndent
+  autocmd!
+  autocmd BufRead,BufNewFile *.ts            set filetype=typescript tabstop=2 softtabstop=2 shiftwidth=2
+  autocmd BufRead,BufNewFile *.js            set filetype=typescript
+  autocmd BufRead,BufNewFile *.vue           set filetype=vue.html.javascript.css
+  autocmd BufRead,BufNewFile *.fxml          set filetype=xml
+  autocmd BufNewFile,BufRead *.json.jbuilder set filetype=ruby
+augroup END
+augroup colorschemeSetting
+  autocmd ColorScheme * highlight Comment ctermfg=239 cterm=BOLD
+  autocmd ColorScheme * highlight LineNr  ctermfg=239
+  autocmd FileType typescript setlocal completeopt+=menu,preview
+augroup END
+
+autocmd BufNewFile,BufRead *.vue set filetype=vue
+
+" - key map
+" --- buffer setting
+noremap bls :ls<CR>:buf 
+noremap bn  :bnext<CR>
+noremap bp  :bprev<CR>
+noremap fn  :edit 
+" --- tab setting
+noremap tt  :tabnew 
+noremap tls :tabs<CR>
+noremap tn  :tabnext<CR>
+noremap tp  :tabprevious<CR>
+" --- split, vsplit setting
+noremap <   <C-w><
+noremap >   <C-w>>
+noremap +   <C-w>+
+noremap -   <C-w>-
+" --- opther
+nmap ,, <Plug>NERDCommenterToggle
+vmap ,, <Plug>NERDCommenterToggle
+
 set number
 set expandtab
 set tabstop=2
@@ -59,25 +90,6 @@ syntax on
 filetype on
 filetype plugin on
 filetype indent on
-
-augroup fileTypeIndent
-  autocmd!
-  autocmd BufRead,BufNewFile *.ts            set filetype=typescript tabstop=2 softtabstop=2 shiftwidth=2
-  autocmd BufRead,BufNewFile *.js            set filetype=typescript
-  autocmd BufRead,BufNewFile *.vue           set filetype=vue.html.javascript.css
-  autocmd BufRead,BufNewFile *.fxml          set filetype=xml
-  autocmd BufNewFile,BufRead *.json.jbuilder set filetype=ruby
-augroup END
-autocmd BufNewFile,BufRead *.vue set filetype=vue
-
-"key map
-noremap bls :ls<CR>:buf 
-noremap tt  :tabnew 
-noremap tls :tabs<CR>
-noremap tn  :tabnext<CR>
-noremap tp  :tabprevious<CR>
-nmap ,c <Plug>NERDCommenterToggle
-vmap ,c <Plug>NERDCommenterToggle
 
 colorscheme landscape
 let g:airline_theme='dark'
