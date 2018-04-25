@@ -17,6 +17,8 @@ call dein#begin(expand('~/.vim/dein'))
   call dein#add('tomtom/tcomment_vim')
   call dein#add('scrooloose/nerdcommenter')
   call dein#add('Galooshi/import-js')
+  call dein#add('digitaltoad/vim-pug')
+  call dein#add('tfnico/vim-gradle')
   call dein#add('Quramy/tsuquyomi')
   call dein#add('Quramy/tsuquyomi-vue')
   call dein#add('Quramy/vim-js-pretty-template')
@@ -25,7 +27,8 @@ call dein#begin(expand('~/.vim/dein'))
   call dein#add('tpope/vim-rails')
   call dein#add('othree/yajs.vim')
   call dein#add('udalov/kotlin-vim')
-  call dein#add('tfnico/vim-gradle')
+  call dein#add('rhysd/vim-wasm')
+  call dein#add('scrooloose/nerdtree')
   "call dein#add('Shougo/vimproc.vim')
 
   " --- color schemes
@@ -42,7 +45,7 @@ endif
 augroup fileTypeIndent
   autocmd!
   autocmd BufRead,BufNewFile *.ts            set filetype=typescript tabstop=2 softtabstop=2 shiftwidth=2
-  autocmd BufRead,BufNewFile *.js            set filetype=typescript
+  autocmd BufRead,BufNewFile *.gradle        set filetype=java tabstop=2 softtabstop=2 shiftwidth=2
   autocmd BufRead,BufNewFile *.vue           set filetype=vue.html.javascript.css
   autocmd BufRead,BufNewFile *.fxml          set filetype=xml
   autocmd BufNewFile,BufRead *.json.jbuilder set filetype=ruby
@@ -54,6 +57,7 @@ augroup colorschemeSetting
 augroup END
 
 autocmd BufNewFile,BufRead *.vue set filetype=vue
+autocmd VimEnter *  execute 'NERDTree' | execute "normal! \<C-w>l"
 
 " - key map
 " --- buffer setting
@@ -73,7 +77,8 @@ noremap +   <C-w>+
 noremap -   <C-w>-
 " --- opther
 nmap ,, <Plug>NERDCommenterToggle
-vmap ,, <Plug>NERDCommenterToggle
+" --- nerdtree
+noremap nt :NERDTreeToggle<CR>
 
 set number
 set expandtab
