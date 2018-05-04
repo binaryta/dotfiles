@@ -1,0 +1,81 @@
+# call dein#add('Galooshi/import-js')
+# call dein#add('jason0x43/vim-js-indent')
+# call dein#add('Shougo/vimproc.vim')
+
+[[plugins]]
+repo  = 'zchee/deoplete-clang'
+
+[[plugins]]
+repo  = 'vim-airline/vim-airline'
+
+[[plugins]]
+repo  = 'vim-airline/vim-airline-themes'
+
+[[plugins]]
+repo = 'mattn/emmet-vim'
+
+[[plugins]]
+repo = 'slim-template/vim-slim'
+
+[[plugins]]
+repo = 'posva/vim-vue'
+
+[[plugins]]
+repo = 'leafgarland/typescript-vim'
+
+[[plugins]]
+repo = 'flowtype/vim-flow'
+
+[[plugins]]
+repo = 'tomtom/tcomment_vim'
+
+[[plugins]]
+repo = 'scrooloose/nerdcommenter'
+
+[[plugins]]
+repo = 'digitaltoad/vim-pug'
+
+[[plugins]]
+repo = 'tfnico/vim-gradle'
+
+[[plugins]]
+repo = 'Quramy/tsuquyomi'
+
+[[plugins]]
+repo = 'Quramy/tsuquyomi-vue'
+
+[[plugins]]
+repo = 'Quramy/vim-js-pretty-template'
+
+[[plugins]]
+repo = 'tpope/vim-rails'
+
+[[plugins]]
+repo = 'othree/yajs.vim'
+
+[[plugins]]
+repo = 'udalov/kotlin-vim'
+
+[[plugins]]
+repo = 'rhysd/vim-wasm'
+
+[[plugins]]
+repo = 'scrooloose/nerdtree'
+
+[[plugins]]
+repo = 'cespare/vim-toml'
+
+[[plugins]]
+repo = 'tmhedberg/matchit'
+
+[[plugins]]
+repo = 'tomasr/molokai'
+
+[[plugins]]
+repo = 'itchyny/landscape.vim'
+
+[[plugins]]
+repo = 'Reewr/vim-monokai-phoenix'
+
+[[plugins]]
+repo = 'Shougo/vimfiler.vim'
