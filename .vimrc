@@ -26,7 +26,7 @@ augroup colorschemeSetting
   autocmd ColorScheme * highlight LineNr  ctermfg=239
 augroup END
 
-autocmd VimEnter *  execute 'NERDTree' | execute "normal! \<C-w>l"
+"autocmd VimEnter *  execute 'NERDTree' | execute "normal! \<C-w>l"
 
 set number
 set expandtab
