@@ -15,28 +15,10 @@ repo  = 'vim-airline/vim-airline-themes'
 repo = 'mattn/emmet-vim'
 
 [[plugins]]
-repo = 'slim-template/vim-slim'
-
-[[plugins]]
-repo = 'posva/vim-vue'
-
-[[plugins]]
-repo = 'leafgarland/typescript-vim'
-
-[[plugins]]
-repo = 'flowtype/vim-flow'
-
-[[plugins]]
 repo = 'tomtom/tcomment_vim'
 
 [[plugins]]
 repo = 'scrooloose/nerdcommenter'
-
-[[plugins]]
-repo = 'digitaltoad/vim-pug'
-
-[[plugins]]
-repo = 'tfnico/vim-gradle'
 
 [[plugins]]
 repo = 'Quramy/tsuquyomi'
@@ -54,31 +36,19 @@ repo = 'tpope/vim-rails'
 repo = 'othree/yajs.vim'
 
 [[plugins]]
-repo = 'udalov/kotlin-vim'
-
-[[plugins]]
-repo = 'rhysd/vim-wasm'
-
-[[plugins]]
-repo = 'scrooloose/nerdtree'
-
-[[plugins]]
-repo = 'cespare/vim-toml'
-
-[[plugins]]
 repo = 'tmhedberg/matchit'
 
 [[plugins]]
-repo = 'tomasr/molokai'
-
-[[plugins]]
-repo = 'itchyny/landscape.vim'
-
-[[plugins]]
-repo = 'Reewr/vim-monokai-phoenix'
+repo = 'Shougo/unite.vim'
 
 [[plugins]]
 repo = 'Shougo/vimfiler.vim'
+hook_add = '''
+  let g:vimfiler_safe_mode_by_default = 0
+  let g:vimfiler_enable_auto_cd = 1
+  nnoremap <silent> <space>e :VimFilerExplorer -toggle<CR>
+  nnoremap <silent> <space>n :VimFilerExplorer -find<CR>
+'''
 
 #[[plugins]]
 #repo = 'scrooloose/syntastic'
@@ -97,3 +67,41 @@ hook_add = '''
 let g:ale_sign_error = "E"
 let g:ale_sign_warning = "W"
 '''
+
+#------- syntax highlight -------
+[[plugins]]
+repo = 'udalov/kotlin-vim'
+
+[[plugins]]
+repo = 'rhysd/vim-wasm'
+
+[[plugins]]
+repo = 'cespare/vim-toml'
+
+[[plugins]]
+repo = 'slim-template/vim-slim'
+
+[[plugins]]
+repo = 'posva/vim-vue'
+
+[[plugins]]
+repo = 'leafgarland/typescript-vim'
+
+[[plugins]]
+repo = 'flowtype/vim-flow'
+
+[[plugins]]
+repo = 'digitaltoad/vim-pug'
+
+[[plugins]]
+repo = 'tfnico/vim-gradle'
+
+#------- colorscheme -------
+[[plugins]]
+repo = 'tomasr/molokai'
+
+[[plugins]]
+repo = 'itchyny/landscape.vim'
+
+[[plugins]]
+repo = 'Reewr/vim-monokai-phoenix'
