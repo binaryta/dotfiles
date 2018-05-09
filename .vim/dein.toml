@@ -6,6 +6,12 @@
 repo  = 'zchee/deoplete-clang'
 
 [[plugins]]
+repo = 'airblade/vim-rooter'
+hook_add = '''
+let g:rooter_patterns = ['Rakefile', '.git/']
+'''
+
+[[plugins]]
 repo  = 'vim-airline/vim-airline'
 
 [[plugins]]
@@ -46,8 +52,6 @@ repo = 'Shougo/vimfiler.vim'
 hook_add = '''
   let g:vimfiler_safe_mode_by_default = 0
   let g:vimfiler_enable_auto_cd = 1
-  nnoremap <silent> <space>e :VimFilerExplorer -toggle<CR>
-  nnoremap <silent> <space>n :VimFilerExplorer -find<CR>
 '''
 
 #[[plugins]]

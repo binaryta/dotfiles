@@ -26,7 +26,6 @@ augroup colorschemeSetting
   autocmd ColorScheme * highlight LineNr  ctermfg=239
 augroup END
 
-"autocmd VimEnter *  execute 'NERDTree' | execute "normal! \<C-w>l"
 
 set number
 set expandtab
@@ -49,4 +48,6 @@ let g:airline_theme='dark'
 let mapleader = " "
 let g:tsuquyomi_completion_detail = 1
 
+"autocmd VimEnter *  execute 'VimFilerExplorer' | execute "normal! \<C-w>l"
+autocmd VimEnter *  execute 'VimFilerExplorer'
 source ~/.vim/keymap.vim

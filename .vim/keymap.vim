@@ -19,8 +19,8 @@ noremap -   <C-w>-
 " --- comment out
 nmap ,, <Plug>NERDCommenterToggle
 
-" --- nerdtree
-noremap Nt :NERDTreeToggle<CR>
+" --- vimfiler
+nnoremap <silent> <space>f :VimFilerExplorer -toggle<CR>
 
 " --- tag jump
 nnoremap <C-]> g<C-]>
