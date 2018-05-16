@@ -49,5 +49,5 @@ let mapleader = " "
 let g:tsuquyomi_completion_detail = 1
 
 "autocmd VimEnter *  execute 'VimFilerExplorer' | execute "normal! \<C-w>l"
-autocmd VimEnter *  execute 'VimFilerExplorer'
+"autocmd VimEnter *  execute 'VimFilerExplorer'
 source ~/.vim/keymap.vim
