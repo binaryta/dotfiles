@@ -28,3 +28,6 @@ nnoremap <C-]> g<C-]>
 " --- ale
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
+
+" --- haya14busa/incsearch.vim
+map /  <Plug>(incsearch-forward)

@@ -3,7 +3,10 @@
 # call dein#add('Shougo/vimproc.vim')
 
 [[plugins]]
-repo  = 'zchee/deoplete-clang'
+repo = 'haya14busa/incsearch.vim'
+
+[[plugins]]
+repo = 'zchee/deoplete-clang'
 
 [[plugins]]
 repo = 'airblade/vim-rooter'
@@ -12,7 +15,7 @@ let g:rooter_patterns = ['Rakefile', '.git/']
 '''
 
 [[plugins]]
-repo  = 'vim-airline/vim-airline'
+repo = 'vim-airline/vim-airline'
 
 [[plugins]]
 repo  = 'vim-airline/vim-airline-themes'
