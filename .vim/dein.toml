@@ -3,6 +3,12 @@
 # call dein#add('Shougo/vimproc.vim')
 
 [[plugins]]
+repo = 'Shougo/neocomplete.vim'
+
+[[plugins]]
+repo = 'Shougo/vimproc.vim'
+
+[[plugins]]
 repo = 'haya14busa/incsearch.vim'
 
 [[plugins]]
@@ -58,17 +64,6 @@ hook_add = '''
   let g:vimfiler_edit_action = 'tabopen'
 '''
 
-#[[plugins]]
-#repo = 'scrooloose/syntastic'
-#hook_add = '''
-#let g:syntastic_check_on_open=0
-#let g:syntastic_check_on_wq=0
-#let g:syntastic_c_check_header = 1
-#let g:syntastic_cpp_check_header = 1
-#let g:syntastic_java_javac_config_file_enabled = 1
-#let g:syntastic_java_javac_config_file = "$HOME/.syntastic_javac_config"
-#'''
-
 [[plugins]]
 repo = 'w0rp/ale'
 hook_add = '''
@@ -103,6 +98,9 @@ repo = 'digitaltoad/vim-pug'
 
 [[plugins]]
 repo = 'tfnico/vim-gradle'
+
+[[plugins]]
+repo = 'kchmck/vim-coffee-script'
 
 #------- colorscheme -------
 [[plugins]]
