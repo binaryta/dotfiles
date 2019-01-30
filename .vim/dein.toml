@@ -3,6 +3,9 @@
 # call dein#add('Shougo/vimproc.vim')
 
 [[plugins]]
+repo = 'kovisoft/slimv'
+
+[[plugins]]
 repo = 'Shougo/neocomplete.vim'
 
 [[plugins]]
