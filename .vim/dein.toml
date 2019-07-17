@@ -3,9 +3,6 @@
 # call dein#add('Shougo/vimproc.vim')
 
 [[plugins]]
-repo = 'kovisoft/slimv'
-
-[[plugins]]
 repo = 'Shougo/neocomplete.vim'
 
 [[plugins]]
@@ -17,11 +14,11 @@ repo = 'haya14busa/incsearch.vim'
 [[plugins]]
 repo = 'zchee/deoplete-clang'
 
-[[plugins]]
-repo = 'airblade/vim-rooter'
-hook_add = '''
-let g:rooter_patterns = ['Rakefile', '.git/']
-'''
+# [[plugins]]
+# repo = 'airblade/vim-rooter'
+# hook_add = '''
+# let g:rooter_patterns = ['Rakefile', '.git/']
+# '''
 
 [[plugins]]
 repo = 'vim-airline/vim-airline'
@@ -74,28 +71,10 @@ let g:ale_sign_error = "E"
 let g:ale_sign_warning = "W"
 '''
 
-#------- syntax highlight -------
 [[plugins]]
-repo = 'udalov/kotlin-vim'
+repo = 'scrooloose/syntastic'
 
-[[plugins]]
-repo = 'rhysd/vim-wasm'
-
-[[plugins]]
-repo = 'cespare/vim-toml'
-
-[[plugins]]
-repo = 'slim-template/vim-slim'
-
-[[plugins]]
-repo = 'posva/vim-vue'
-
-[[plugins]]
-repo = 'leafgarland/typescript-vim'
-
-[[plugins]]
-repo = 'flowtype/vim-flow'
-
+#---- syntax highlight -----
 [[plugins]]
 repo = 'digitaltoad/vim-pug'
 
@@ -103,7 +82,40 @@ repo = 'digitaltoad/vim-pug'
 repo = 'tfnico/vim-gradle'
 
 [[plugins]]
+repo = 'arrufat/vala.vim'
+
+[[plugins]]
+repo = 'rust-lang/rust.vim'
+
+[[plugins]]
+repo = 'leafgarland/typescript-vim'
+
+[[plugins]]
+repo = 'posva/vim-vue'
+
+[[plugins]]
 repo = 'kchmck/vim-coffee-script'
+
+[[plugins]]
+repo = 'slim-template/vim-slim'
+
+[[plugins]]
+repo = 'cespare/vim-toml'
+
+[[plugins]]
+repo = 'keith/swift.vim'
+
+[[plugins]]
+repo = 'reasonml-editor/vim-reason-plus'
+
+[[plugins]]
+repo = 'udalov/kotlin-vim'
+
+[[plugins]]
+repo = 'rhysd/vim-wasm'
+
+# [[plugins]]
+# repo = 'flowtype/vim-flow'
 
 #------- colorscheme -------
 [[plugins]]
