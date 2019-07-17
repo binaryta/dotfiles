@@ -6,4 +6,6 @@ cp -r ./.bash ~/
 
 cp ./.bashrc ~/
 
+cp -r ./src ~/
+
 cp ./.screenrc ~/
