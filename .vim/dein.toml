@@ -114,6 +114,9 @@ repo = 'udalov/kotlin-vim'
 [[plugins]]
 repo = 'rhysd/vim-wasm'
 
+[[plugins]]
+repo = 'noprompt/vim-yardoc'
+
 # [[plugins]]
 # repo = 'flowtype/vim-flow'
 
