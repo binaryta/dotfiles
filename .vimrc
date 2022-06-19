@@ -81,5 +81,5 @@ augroup colorschemeSetting
 augroup END
 
 let mapleader = " "
-colorscheme landscape
+colorscheme monokai-phoenix
 source ~/.vim/keymap.vim
