@@ -16,21 +16,18 @@ noremap >   <C-w>>
 noremap +   <C-w>+
 noremap -   <C-w>-
 
-" --- comment out
-nmap ,, <Plug>NERDCommenterToggle
-
-" --- vimfiler
-nnoremap <silent> <space>f :VimFilerExplorer -toggle<CR>
-
 " --- tag jump
 nnoremap <C-]> g<C-]>
 
-" --- ale
+" --- Shougo/vimfiler.vim
+nnoremap <silent> <space>f :VimFilerExplorer -toggle<CR>
+
+" --- w0rp/ale
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
 
-" tsuquyomi
-noremap ti :TsuImport<CR>
-
 " --- haya14busa/incsearch.vim
 map / <Plug>(incsearch-forward)
+
+" --- tomtom/tcomment_vim
+map ,, :TComment<CR>
