@@ -60,6 +60,7 @@ Plug 'w0rp/ale'
   let g:ale_linters_explicit = 1 
   let g:airline#extensions#ale#enabled = 1
 Plug 'scrooloose/syntastic'
+Plug 'jeetsukumaran/vim-buffergator'
 
 " TypeScript
 Plug 'Quramy/tsuquyomi'
