@@ -24,6 +24,7 @@ alias k=kubectl
 alias gs="git status"
 alias grep="grep --color"
 alias fgrep='() {find $1 -type f | xargs grep --color $2}'
+alias ctags="`brew --prefix`/bin/ctags"
 
 # direnv
 eval "$(direnv hook zsh)"
