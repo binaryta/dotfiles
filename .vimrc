@@ -59,13 +59,24 @@ Plug 'w0rp/ale'
         \}
   let g:ale_linters_explicit = 1 
   let g:airline#extensions#ale#enabled = 1
-Plug 'scrooloose/syntastic'
+"Plug 'vim-syntastic/syntastic'
+"  let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': ['ruby'] }
+"  let g:syntastic_ruby_checkers = ['rubocop']
+"  set statusline+=%#warningmsg#
+"  set statusline+=%{SyntasticStatuslineFlag()}
+"  set statusline+=%*
+"  let g:syntastic_always_populate_loc_list = 1
+"  let g:syntastic_auto_loc_list = 1
+"  let g:syntastic_check_on_open = 1
+"  let g:syntastic_check_on_wq = 0
 Plug 'jeetsukumaran/vim-buffergator'
 
 " TypeScript
 Plug 'Quramy/tsuquyomi'
 Plug 'Quramy/tsuquyomi-vue'
 
+" HTML
+Plug 'mattn/emmet-vim'
 call plug#end()
 
 augroup fileTypeIndent
