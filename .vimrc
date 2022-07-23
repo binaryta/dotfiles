@@ -86,6 +86,7 @@ augroup fileTypeIndent
   autocmd BufRead,BufNewFile *.vue           set filetype=vue.html.javascript.css
   autocmd BufRead,BufNewFile *.fxml          set filetype=xml
   autocmd BufRead,BufNewFile *.json.jbuilder set filetype=ruby
+  autocmd BufRead,BufNewFile Brewfile        set filetype=ruby
 augroup END
 augroup colorschemeSetting
   autocmd ColorScheme * highlight Comment ctermfg=239 cterm=BOLD
