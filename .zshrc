@@ -17,7 +17,20 @@ complete -F __start_kubectl k
 # nodenv
 eval "$(nodenv init -)"
 
-export COMPOSE_FILE=compose.arm.yml
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+# direnv
+eval "$(direnv hook zsh)"
+
+# pnpm
+export PNPM_HOME="/Users/naritatakuya/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# tabtab source for packages
+# uninstall by removing these lines
+[[ -f ~/.config/tabtab/zsh/__tabtab.zsh ]] && . ~/.config/tabtab/zsh/__tabtab.zsh || true
 
 # aliases
 alias k=kubectl
@@ -25,6 +38,7 @@ alias gs="git status"
 alias grep="grep --color"
 alias fgrep='() {find $1 -type f | xargs grep --color $2}'
 alias ctags="`brew --prefix`/bin/ctags"
+alias doco="docker compose"
 
-# direnv
-eval "$(direnv hook zsh)"
+# ---
+export COMPOSE_FILE=compose.arm.yml
