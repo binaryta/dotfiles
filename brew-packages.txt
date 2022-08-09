@@ -1,9 +1,0 @@
-git
-vim
-neovim
-siege
-tree
-pnpm
-ctags
-jq
-yq
