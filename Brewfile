@@ -1,14 +1,12 @@
-# frozen_string_literal: true
-
 tap "hashicorp/tap"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
+tap "mas-cli/tap"
 tap "microsoft/git"
 tap "mike-engel/jwt-cli"
 tap "thought-machine/please"
-
 brew "circleci"
 brew "ctags"
 brew "direnv"
@@ -17,7 +15,9 @@ brew "git"
 brew "unbound"
 brew "gnutls"
 brew "gnupg"
+brew "graphviz"
 brew "jq"
+brew "mas"
 brew "neovim"
 brew "node-build"
 brew "nodenv"
@@ -31,7 +31,11 @@ brew "yq"
 brew "zeromq"
 brew "mike-engel/jwt-cli/jwt-cli"
 brew "thought-machine/please/please"
-
 cask "font-ricty-diminished"
 cask "git-credential-manager-core"
 cask "ngrok"
+mas "Keynote", id: 409183694
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "Sequel Ace", id: 1518036000
+mas "Slack", id: 803453959
