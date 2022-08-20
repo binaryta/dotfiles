@@ -31,6 +31,9 @@ export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
+# pip
+export PATH="$(python3 -m site --user-base)/bin:$PATH"
+
 # direnv
 eval "$(direnv hook zsh)"
 
