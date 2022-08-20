@@ -28,6 +28,7 @@ Plug 'rust-lang/rust.vim'
 Plug 'leafgarland/typescript-vim'
 Plug 'cespare/vim-toml'
 Plug 'noprompt/vim-yardoc'
+Plug 'jparise/vim-graphql'
 
 " Color schames
 Plug 'itchyny/landscape.vim'
