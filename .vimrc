@@ -29,6 +29,7 @@ Plug 'leafgarland/typescript-vim'
 Plug 'cespare/vim-toml'
 Plug 'noprompt/vim-yardoc'
 Plug 'jparise/vim-graphql'
+Plug 'pantharshit00/vim-prisma'
 
 " Color schames
 Plug 'itchyny/landscape.vim'
@@ -78,6 +79,8 @@ Plug 'Quramy/tsuquyomi-vue'
 
 " HTML
 Plug 'mattn/emmet-vim'
+Plug 'editorconfig/editorconfig-vim'
+
 call plug#end()
 
 augroup fileTypeIndent
