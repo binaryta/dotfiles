@@ -37,6 +37,7 @@ Plug 'tomasr/molokai'
 Plug 'Reewr/vim-monokai-phoenix'
 
 " Integrations
+Plug 'github/copilot.vim'
 Plug 'haya14busa/incsearch.vim'
 Plug 'tomtom/tcomment_vim'
 Plug 'Shougo/neocomplete.vim'
@@ -46,8 +47,8 @@ Plug 'Shougo/vimfiler.vim'
   let g:vimfiler_safe_mode_by_default = 0
   let g:vimfiler_enable_auto_cd = 1
   let g:vimfiler_edit_action = 'tabopen'
-Plug 'airblade/vim-rooter'
-  let g:rooter_patterns = ['Rakefile', '.git/']
+" Plug 'airblade/vim-rooter'
+"   let g:rooter_patterns = ['Rakefile', '.git/']
 Plug 'vim-airline/vim-airline'
   let g:airline_theme='dark'
 Plug 'vim-airline/vim-airline-themes'
@@ -80,6 +81,7 @@ Plug 'Quramy/tsuquyomi-vue'
 " HTML
 Plug 'mattn/emmet-vim'
 Plug 'editorconfig/editorconfig-vim'
+
 
 call plug#end()
 
