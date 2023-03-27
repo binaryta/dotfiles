@@ -47,5 +47,14 @@ export PATH="$PNPM_HOME:$PATH"
 # please.build
 source <(plz --completion_script)
 
-# ---
-export COMPOSE_FILE=compose.arm.yml
+# pnpm
+export PNPM_HOME="/Users/naritatakuya/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+
+# add Pulumi to the PATH
+export PATH=$PATH:$HOME/.pulumi/bin
+
+export PATH="$PATH:/Users/naritatakuya/.bin"
+
+# my private settings
+source $HOME/.private.zshrc
