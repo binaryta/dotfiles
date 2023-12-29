@@ -12,7 +12,8 @@ alias grep="grep --color"
 alias fgrep='() {find $1 -type f | xargs grep --color $2}'
 alias ctags="`brew --prefix`/bin/ctags"
 alias doco="docker compose"
-alias plz="please"
+alias gitclean="git branch --merged | egrep -v \"(^\*|master|main|dev)\" | xargs git branch -d"
+alias yw="yarn workspace"
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/naritatakuya/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/naritatakuya/Downloads/google-cloud-sdk/path.zsh.inc'; fi
@@ -44,13 +45,6 @@ export PATH="$PNPM_HOME:$PATH"
 # uninstall by removing these lines
 [[ -f ~/.config/tabtab/zsh/__tabtab.zsh ]] && . ~/.config/tabtab/zsh/__tabtab.zsh || true
 
-# please.build
-source <(plz --completion_script)
-
-# pnpm
-export PNPM_HOME="/Users/naritatakuya/Library/pnpm"
-export PATH="$PNPM_HOME:$PATH"
-
 # add Pulumi to the PATH
 export PATH=$PATH:$HOME/.pulumi/bin
 
@@ -58,3 +52,9 @@ export PATH="$PATH:/Users/naritatakuya/.bin"
 
 # my private settings
 source $HOME/.private.zshrc
+
+autoload bashcompinit && bashcompinit
+autoload -Uz compinit && compinit
+
+# aws-cli completion
+complete -C '/usr/local/bin/aws_completer' aws
