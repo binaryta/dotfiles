@@ -30,6 +30,7 @@ Plug 'cespare/vim-toml'
 Plug 'noprompt/vim-yardoc'
 Plug 'jparise/vim-graphql'
 Plug 'pantharshit00/vim-prisma'
+Plug 'isRuslan/vim-es6'
 
 " Color schames
 Plug 'itchyny/landscape.vim'
@@ -82,6 +83,9 @@ Plug 'Quramy/tsuquyomi-vue'
 Plug 'mattn/emmet-vim'
 Plug 'editorconfig/editorconfig-vim'
 
+" JavaScript
+Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
+
 
 call plug#end()
 
@@ -93,6 +97,7 @@ augroup fileTypeIndent
   autocmd BufRead,BufNewFile *.fxml          set filetype=xml
   autocmd BufRead,BufNewFile *.json.jbuilder set filetype=ruby
   autocmd BufRead,BufNewFile Brewfile        set filetype=ruby
+  autocmd BufRead,BufNewFile *.{mjs}         set filetype=javascript
 augroup END
 augroup colorschemeSetting
   autocmd ColorScheme * highlight Comment ctermfg=239 cterm=BOLD
