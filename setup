@@ -1,0 +1,32 @@
+#!/bin/bash
+
+# Homebrew
+brew update
+brew bundle --file ./Brewfile
+
+
+# Zsh
+rm -rf $HOME/.zshrc
+ln -s .zshrc $HOME/.zshrc
+cp .zshrc.custom/ $HOME/.zshrc.custom
+
+
+# Vim
+### backup
+mv -v ~/.vimrc ~/.vimrc.old 2> /dev/null
+mv -v ~/.vim ~/.vim.old 2> /dev/null
+
+cd $(dirname $BASH_SOURCE)
+BASE=$(pwd)
+
+# export GIT_SSL_NO_VERIFY=true
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+# curl --insecure -fLo ~/.vim/autoload/plug.vim --create-dirs \
+#   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+### symlinks
+ln -sf $BASE/.vimrc ~/.vimrc
+ln -sf $BASE/.vim/keymap.vim ~/.vim/
+
+vim +PlugInstall +qa

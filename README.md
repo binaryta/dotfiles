@@ -1,14 +1,6 @@
 # dotfiles
 
-## macOS
-
-### Install requirements
 ```sh
-brew install mas bundle
-```
-
-### Install brew packages
-
-```sh
-brew bundle
-```
+git clone git@github.com:binaryta/dotfiles.git
+cd ~/dotfiles && ./setup
+``` 
