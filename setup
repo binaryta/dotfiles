@@ -13,7 +13,7 @@ ln -sf $BASE/.zshrc $HOME/.zshrc
 ln -sf $BASE/.zshrc.custom $HOME/.zshrc.custom
 
 
-# # Vim
+# Vim
 ### backup
 mv -v ~/.vimrc ~/.vimrc.old 2> /dev/null
 mv -v ~/.vim ~/.vim.old 2> /dev/null
@@ -21,6 +21,6 @@ mv -v ~/.vim ~/.vim.old 2> /dev/null
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ### symlinks
 ln -sf $BASE/.vimrc ~/.vimrc
-ln -sf $BASE/.vim/keymap.vim ~/.vim/
+ln -sf $BASE/.vim/config ~/.vim/config
 ### install plugins
 vim +PlugInstall +qa
