@@ -26,6 +26,7 @@ Plug 'Shougo/vimfiler.vim'
 let g:vimfiler_safe_mode_by_default = 0
 let g:vimfiler_enable_auto_cd = 1
 let g:vimfiler_edit_action = 'tabopen'
+let g:vimfiler_ignore_pattern = ['^\.git$', '^\.DS_Store$']
 " Plug 'airblade/vim-rooter'
 "   let g:rooter_patterns = ['Rakefile', '.git/']
 Plug 'vim-airline/vim-airline'
