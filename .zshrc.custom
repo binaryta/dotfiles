@@ -42,3 +42,6 @@ autoload -Uz compinit && compinit
 
 # aws-cli completion
 complete -C '/usr/local/bin/aws_completer' aws
+
+# asdf
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
