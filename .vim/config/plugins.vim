@@ -26,7 +26,7 @@ Plug 'Shougo/vimfiler.vim'
 let g:vimfiler_safe_mode_by_default = 0
 let g:vimfiler_enable_auto_cd = 1
 let g:vimfiler_edit_action = 'tabopen'
-let g:vimfiler_ignore_pattern = ['^\.git$', '^\.DS_Store$']
+let g:vimfiler_ignore_pattern = ['^\.git$', '^\.DS_Store$', 'node_modules']
 " Plug 'airblade/vim-rooter'
 "   let g:rooter_patterns = ['Rakefile', '.git/']
 Plug 'vim-airline/vim-airline'
@@ -53,6 +53,9 @@ let g:airline#extensions#ale#enabled = 1
 "  let g:syntastic_check_on_open = 1
 "  let g:syntastic_check_on_wq = 0
 Plug 'jeetsukumaran/vim-buffergator'
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+set updatetime=250
 
 " TypeScript
 Plug 'Quramy/tsuquyomi'
