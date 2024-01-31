@@ -7,3 +7,5 @@ source $ZSH/oh-my-zsh.sh
 
 # customize
 source $HOME/.zshrc.custom
+
+export GPG_TTY=$(tty)
