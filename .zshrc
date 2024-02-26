@@ -8,4 +8,8 @@ source $ZSH/oh-my-zsh.sh
 # customize
 source $HOME/.zshrc.custom
 
+# private
+source $HOME/.zshrc.private
+
 export GPG_TTY=$(tty)
+
