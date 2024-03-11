@@ -11,7 +11,7 @@ brew bundle --file ./Brewfile
 rm -rf $HOME/.zshrc
 ln -sf $BASE/.zshrc $HOME/.zshrc
 ln -sf $BASE/.zshrc.custom $HOME/.zshrc.custom
-touch  $BASE/.zshrc.private
+touch  $HOME/.zshrc.env
 
 
 # Vim
