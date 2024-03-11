@@ -8,8 +8,9 @@ source $ZSH/oh-my-zsh.sh
 # customize
 source $HOME/.zshrc.custom
 
-# private
-source $HOME/.zshrc.private
+# environment variables
+source $HOME/.zshrc.env
 
 export GPG_TTY=$(tty)
 
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
