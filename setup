@@ -3,19 +3,20 @@ cd $(dirname $BASH_SOURCE)
 BASE=$(pwd)
 
 
-# Homebrew
-brew update
-brew bundle --file ./Brewfile
-
-# Zsh
-rm -rf $HOME/.zshrc
-ln -sf $BASE/.zshrc $HOME/.zshrc
-ln -sf $BASE/.zshrc.custom $HOME/.zshrc.custom
-touch  $HOME/.zshrc.env
+# # Homebrew
+# brew update
+# brew bundle --file ./Brewfile
+# 
+# # Zsh
+# rm -rf $HOME/.zshrc
+# ln -sf $BASE/.zshrc $HOME/.zshrc
+# ln -sf $BASE/.zshrc.custom $HOME/.zshrc.custom
+# touch  $HOME/.zshrc.env
 
 
 # Vim
 ### backup
+rm -rf ~/.vimrc.old ~/.vim.old
 mv -v ~/.vimrc ~/.vimrc.old 2> /dev/null
 mv -v ~/.vim ~/.vim.old 2> /dev/null
 ### install vim-plug
