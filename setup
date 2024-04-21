@@ -3,15 +3,18 @@ cd $(dirname $BASH_SOURCE)
 BASE=$(pwd)
 
 
-# # Homebrew
-# brew update
-# brew bundle --file ./Brewfile
-# 
-# # Zsh
-# rm -rf $HOME/.zshrc
-# ln -sf $BASE/.zshrc $HOME/.zshrc
-# ln -sf $BASE/.zshrc.custom $HOME/.zshrc.custom
-# touch  $HOME/.zshrc.env
+# Zsh
+rm -rf $HOME/.zshrc
+ln -sf $BASE/.zshrc $HOME/.zshrc
+ln -sf $BASE/.zshrc.custom $HOME/.zshrc.custom
+ln -sf $BASE/.zshrc.brewbundle $HOME/.zshrc.brewbundle
+touch  $HOME/.zshrc.env
+
+
+# Homebrew
+source $HOME/.zshrc.brewbundle
+brew update
+brew bundle --no-lock --file ./Brewfile
 
 
 # Vim
