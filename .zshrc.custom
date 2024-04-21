@@ -38,8 +38,8 @@ complete -C '/usr/local/bin/aws_completer' aws
 # asdf
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
 
-# ghq & fzf
-function ghq-fzf() {
+# custom shortcut
+function fzf-ghq() {
   local src=$(ghq list | fzf --preview "ls -laTp $(ghq root)/{} | tail -n+4 | awk '{print \$9\"/\"\$6\"/\"\$7 \" \" \$10}'")
   if [ -n "$src" ]; then
     BUFFER="cd $(ghq root)/$src"
@@ -47,5 +47,22 @@ function ghq-fzf() {
   fi
   zle -R -c
 }
-zle -N ghq-fzf
-bindkey '^]' ghq-fzf
+zle -N fzf-ghq
+bindkey '^]g' fzf-ghq
+
+function fzf-yarn-workspace-packages() {
+  if [ ! -d "$(git rev-parse --show-toplevel)/packages" ]; then
+    print "\n${funcstack[-1]}: packages not found."
+    zle accept-line
+    return 0
+  fi
+
+  local src=$(find packages -depth 1 | fzf --preview "ls -laTp $(git rev-parse --show-toplevel)/{} | tail -n+4 | awk '{print \$9\"/\"\$6\"/\"\$7 \" \" \$10}'")
+  if [ -n "$src" ]; then
+    BUFFER="cd $(git rev-parse --show-toplevel)/$src"
+    zle accept-line
+  fi
+  zle -R -c
+}
+zle -N fzf-yarn-workspace-packages
+bindkey '^]y' fzf-yarn-workspace-packages
