@@ -32,7 +32,7 @@ autoload bashcompinit && bashcompinit
 autoload -Uz compinit && compinit
 
 # aws-cli completion
-complete -C '/usr/local/bin/aws_completer' aws
+complete -C '/opt/homebrew/bin/aws_completer' aws
 
 # asdf
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
@@ -65,3 +65,6 @@ function fzf-yarn-workspace-packages() {
 }
 zle -N fzf-yarn-workspace-packages
 bindkey '^]y' fzf-yarn-workspace-packages
+
+# mysql-client
+export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
