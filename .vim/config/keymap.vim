@@ -29,3 +29,9 @@ map / <Plug>(incsearch-forward)
 
 " --- tomtom/tcomment_vim
 map ,, :TComment<CR>
+
+" --- neoclide/coc.nvim
+nmap <silent> <space><space> :<C-u>CocList<cr>
+nmap <silent> <C-f> <Plug>(coc-format)
+nmap <silent> <C-]> <Plug>(coc-definition)
+nmap <silent> <C-t> <C-o>

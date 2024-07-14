@@ -21,18 +21,19 @@ Plug 'Shougo/vimproc.vim'
 Plug 'zchee/deoplete-clang'
 Plug 'Shougo/vimfiler.vim'
 Plug 'airblade/vim-rooter'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+Plug 'itchyny/lightline.vim'
 Plug 'tmhedberg/matchit'
 Plug 'Shougo/unite.vim'
 Plug 'jeetsukumaran/vim-buffergator'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 
-set updatetime=250
+set encoding=utf-8
+set updatetime=150
 
 " vimfiler.vim
 let g:vimfiler_safe_mode_by_default = 0
@@ -43,5 +44,22 @@ let g:vimfiler_ignore_pattern = ['^\.git$', '^\.DS_Store$', 'node_modules']
 " vim-rooter
 let g:rooter_patterns = ['.git/']
 
-" vim-airline
-let g:airline_theme='dark'
+" lightline.vim
+let g:lightline = {
+  \'active': {
+    \'right': [
+      \['coc']
+    \]
+  \},
+  \'component_function': {
+    \'coc': 'coc#status'
+  \}
+\}
+
+" coc.vim
+set nobackup
+set nowritebackup
+set signcolumn=yes
+highlight CocErrorSign ctermfg=15 ctermbg=196
+highlight CocWarningSign ctermfg=0 ctermbg=172
+command! -nargs=0 Prettier :CocCommand prettier.forceFormatDocument
