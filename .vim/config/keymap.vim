@@ -17,16 +17,12 @@ noremap +   <C-w>+
 noremap -   <C-w>-
 
 " --- tag jump
-nnoremap <C-]> g<C-]>
-map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
-map <leader><C-\> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
+" nnoremap <C-]> g<C-]>
+" map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+" map <leader><C-\> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
 
 " --- Shougo/vimfiler.vim
 nnoremap <silent> <space>f :VimFilerExplorer -toggle<CR>
-
-" --- w0rp/ale
-nmap <silent> <C-k> <Plug>(ale_previous_wrap)
-nmap <silent> <C-j> <Plug>(ale_next_wrap)
 
 " --- haya14busa/incsearch.vim
 map / <Plug>(incsearch-forward)
