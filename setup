@@ -2,7 +2,6 @@
 cd $(dirname $BASH_SOURCE)
 BASE=$(pwd)
 
-
 # Zsh
 rm -rf $HOME/.zshrc
 ln -sf $BASE/.zshrc $HOME/.zshrc
@@ -10,11 +9,14 @@ ln -sf $BASE/.zshrc.custom $HOME/.zshrc.custom
 ln -sf $BASE/.zshrc.brewbundle $HOME/.zshrc.brewbundle
 touch  $HOME/.zshrc.env
 
-
 # Homebrew
 source $HOME/.zshrc.brewbundle
 brew update
 brew bundle --no-lock --file ./Brewfile
+
+# Version Manager
+ln -sf $BASE/.tool-versions ~/.tool-versions
+xargs -I x asdf plugin add x < asdf-plugins.txt
 
 
 # Vim
