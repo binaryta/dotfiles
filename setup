@@ -1,7 +1,7 @@
 #!/bin/bash
 cd $(dirname $BASH_SOURCE)
 BASE=$(pwd)
-
+ 
 # Zsh
 rm -rf $HOME/.zshrc
 ln -sf $BASE/.zshrc $HOME/.zshrc
@@ -20,10 +20,6 @@ xargs -I x asdf plugin add x < asdf-plugins.txt
 
 
 # Vim
-### backup
-rm -rf ~/.vimrc.old ~/.vim.old
-mv -v ~/.vimrc ~/.vimrc.old 2> /dev/null
-mv -v ~/.vim ~/.vim.old 2> /dev/null
 ### install vim-plug
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ### symlinks
