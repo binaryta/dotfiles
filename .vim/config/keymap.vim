@@ -35,3 +35,4 @@ nmap <silent> <space><space> :<C-u>CocList<cr>
 nmap <silent> <C-f> <Plug>(coc-format)
 nmap <silent> <C-]> <Plug>(coc-definition)
 nmap <silent> <C-t> <C-o>
+inoremap <expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
