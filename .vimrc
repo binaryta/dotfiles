@@ -11,6 +11,11 @@ set t_Co=256
 set hlsearch
 set wildmenu
 set backspace=indent,eol,start
+set encoding=utf-8
+set updatetime=150
+set nobackup
+set nowritebackup
+set signcolumn=yes
 
 syntax on
 
@@ -18,9 +23,4 @@ filetype on
 filetype plugin on
 filetype indent on
 
-" load monokai-phoenix if it's installed
-if index(getcompletion('', 'color'), 'monokai-phoenix') >= 0
-  colorscheme monokai-phoenix
-else
-  colorscheme default
-endif
+colorscheme retrobox

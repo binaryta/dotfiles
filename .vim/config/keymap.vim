@@ -21,8 +21,8 @@ noremap -   <C-w>-
 " map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
 " map <leader><C-\> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
 
-" --- Shougo/vimfiler.vim
-nnoremap <silent> <space>f :VimFilerExplorer -toggle<CR>
+" --- junegunn/fzf.vim
+nnoremap <silent> <space>f :Files <CR>
 
 " --- haya14busa/incsearch.vim
 map / <Plug>(incsearch-forward)
