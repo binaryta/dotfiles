@@ -7,7 +7,7 @@ rm -rf $HOME/.zshrc
 ln -sf $BASE/.zshrc $HOME/.zshrc
 ln -sf $BASE/.zshrc.custom $HOME/.zshrc.custom
 ln -sf $BASE/.zshrc.brewbundle $HOME/.zshrc.brewbundle
-touch  $HOME/.zshrc.env
+touch $HOME/.zshrc.env
 
 # Homebrew
 source $HOME/.zshrc.brewbundle
@@ -20,10 +20,11 @@ xargs -I x asdf plugin add x < asdf-plugins.txt
 
 
 # Vim
+rm -rf ~/.vimrc ~/.vim
 ### install vim-plug
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ### symlinks
 ln -sf $BASE/.vimrc ~/.vimrc
-ln -sf $BASE/.vim/config ~/.vim/config
+ln -sf $BASE/.vim/config ~/.vim/
 ### install plugins
 vim +PlugInstall +qa
