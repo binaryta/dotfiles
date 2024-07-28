@@ -1,5 +1,9 @@
 call plug#begin()
 
+" Colorscheme
+Plug 'cocopon/iceberg.vim'
+Plug 'wojciechkepka/vim-github-dark'
+
 " Syntax highlights
 Plug 'rust-lang/rust.vim'
 Plug 'leafgarland/typescript-vim'
@@ -13,7 +17,6 @@ Plug 'isRuslan/vim-es6'
 Plug 'github/copilot.vim'
 Plug 'haya14busa/incsearch.vim'
 Plug 'tomtom/tcomment_vim'
-Plug 'Shougo/neocomplete.vim'
 Plug 'Shougo/vimproc.vim'
 Plug 'zchee/deoplete-clang'
 Plug 'airblade/vim-rooter'
@@ -27,6 +30,7 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'thinca/vim-quickrun'
 
 call plug#end()
 
@@ -45,13 +49,23 @@ let g:lightline = {
   \}
 \}
 
+" vim-github-dark
+colorscheme ghdark
+
 " coc.vim
 highlight CocErrorSign ctermfg=15 ctermbg=196
 highlight CocWarningSign ctermfg=0 ctermbg=172
 command! -nargs=0 Prettier :CocCommand prettier.forceFormatDocument
+command! -nargs=? Fold :call     CocAction('fold', <f-args>)
 
 " vim-gitgutter
 highlight GitGutterAdd ctermfg=LightGreen ctermbg=NONE
 highlight GitGutterDeelte ctermfg=LightRed ctermbg=NONE
 let g:gitgutter_sign_allow_clobber = 1
 let g:gitgutter_sign_removed = '-'
+
+" fzf
+let g:fzf_action = {
+  \ 'ctrl-t': 'tab split',
+  \ 'ctrl-x': 'split',
+  \ 'ctrl-v': 'vsplit' }

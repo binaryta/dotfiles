@@ -16,11 +16,14 @@ set updatetime=150
 set nobackup
 set nowritebackup
 set signcolumn=yes
+set cursorline
+set foldenable
+set foldmethod=manual
+set clipboard+=unnamed
+
 
 syntax on
 
 filetype on
 filetype plugin on
 filetype indent on
-
-colorscheme retrobox

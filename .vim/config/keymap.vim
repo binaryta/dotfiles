@@ -31,8 +31,9 @@ map / <Plug>(incsearch-forward)
 map ,, :TComment<CR>
 
 " --- neoclide/coc.nvim
-nmap <silent> <space><space> :<C-u>CocList<cr>
+nmap <silent> <space><space> :<C-u>CocList<CR>
 nmap <silent> <C-f> <Plug>(coc-format)
 nmap <silent> <C-]> <Plug>(coc-definition)
 nmap <silent> <C-t> <C-o>
+nmap <silent> gr <Plug>(coc-references)
 inoremap <expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
