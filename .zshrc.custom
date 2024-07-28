@@ -68,3 +68,5 @@ bindkey '^]y' fzf-yarn-workspace-packages
 
 # mysql-client
 export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
+
+export FZF_DEFAULT_COMMAND='rg --files'
