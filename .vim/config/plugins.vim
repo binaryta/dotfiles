@@ -60,6 +60,22 @@ highlight CocErrorSign ctermfg=15 ctermbg=196
 highlight CocWarningSign ctermfg=0 ctermbg=172
 command! -nargs=0 Prettier :CocCommand prettier.forceFormatDocument
 command! -nargs=? Fold :call     CocAction('fold', <f-args>)
+let g:coc_global_extensions = [
+  \ 'coc-json',
+  \ 'coc-html',
+  \ 'coc-css',
+  \ 'coc-yaml',
+  \ 'coc-prettier',
+  \ 'coc-eslint',
+  \ 'coc-vetur',
+  \ 'coc-graphql',
+  \ 'coc-snippets',
+  \ 'coc-highlight',
+  \ 'coc-git',
+  \ 'coc-fzf-preview',
+  \ 'coc-solargraph',
+  \ 'coc-tsserver'
+  \]
 
 " vim-gitgutter
 highlight GitGutterAdd ctermfg=LightGreen ctermbg=NONE
