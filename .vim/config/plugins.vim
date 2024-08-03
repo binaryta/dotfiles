@@ -31,6 +31,8 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'thinca/vim-quickrun'
+Plug 'vim-test/vim-test'
+Plug 'APZelos/blamer.nvim'
 
 call plug#end()
 
@@ -51,6 +53,7 @@ let g:lightline = {
 
 " vim-github-dark
 colorscheme ghdark
+au Colorscheme ghdark hi Visual cterm=NONE ctermbg=237 ctermfg=NONE
 
 " coc.vim
 highlight CocErrorSign ctermfg=15 ctermbg=196
@@ -69,3 +72,8 @@ let g:fzf_action = {
   \ 'ctrl-t': 'tab split',
   \ 'ctrl-x': 'split',
   \ 'ctrl-v': 'vsplit' }
+
+" blamer.nvim
+" let g:blamer_enabled = 1
+" let g:blamer_delay = 100
+" let g:blamer_date_format = '%Y-%m-%d'
