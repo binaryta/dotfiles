@@ -1,0 +1,12 @@
+{
+  "coc.preferences.formatOnType": true,
+  "javascript.suggest.autoImports": true,
+  "typescript.suggest.autoImports": true,
+  "coc.preferences.extensionUpdateCheck": "daily",
+  "coc.preferences.formatOnSaveFiletypes": ["prisma"],
+  "git.enableGutters": false,
+  "git.blameUseRealTime": true,
+  "git.addGBlameToVirtualText": true,
+  "callHierarchy.enableTooltip": true,
+  "coc.preferences.jumpCommand": "tabnew"
+}

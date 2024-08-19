@@ -67,14 +67,13 @@ let g:coc_global_extensions = [
   \ 'coc-yaml',
   \ 'coc-prettier',
   \ 'coc-eslint',
-  \ 'coc-vetur',
-  \ 'coc-graphql',
   \ 'coc-snippets',
   \ 'coc-highlight',
   \ 'coc-git',
   \ 'coc-fzf-preview',
   \ 'coc-solargraph',
-  \ 'coc-tsserver'
+  \ 'coc-tsserver',
+  \ 'coc-docker',
   \]
 
 " vim-gitgutter

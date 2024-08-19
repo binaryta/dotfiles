@@ -37,3 +37,7 @@ nmap <silent> <C-]> <Plug>(coc-definition)
 nmap <silent> <C-t> <C-o>
 nmap <silent> gr <Plug>(coc-references)
 inoremap <expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
+vmap <leader>a  <Plug>(coc-codeaction-selected)
+nmap <leader>a  <Plug>(coc-codeaction-selected)
+
+
