@@ -8,6 +8,9 @@ alias ctags="`brew --prefix`/bin/ctags"
 alias doco="docker compose"
 alias gitclean="git branch --merged | egrep -v \"(^\*|master|main|dev)\" | xargs git branch -d"
 alias yw="yarn workspace"
+alias vimh="vim +History"
+alias vimf="vim +Files"
+alias vimc="vim +Commands"
 
 # k8s
 source <(kubectl completion zsh)
