@@ -3,6 +3,7 @@ call plug#begin()
 " Colorscheme
 Plug 'cocopon/iceberg.vim'
 Plug 'wojciechkepka/vim-github-dark'
+Plug 'tomasiser/vim-code-dark'
 
 " Syntax highlights
 Plug 'rust-lang/rust.vim'
@@ -52,8 +53,14 @@ let g:lightline = {
 \}
 
 " vim-github-dark
-colorscheme ghdark
-au Colorscheme ghdark hi Visual cterm=NONE ctermbg=237 ctermfg=NONE
+" colorscheme ghdark
+" au Colorscheme ghdark hi Visual cterm=NONE ctermbg=237 ctermfg=NONE
+
+" vim-code-dark
+let g:codedark_modern=1
+let g:codedark_italics=1
+let g:codedark_transparent=1
+colorscheme codedark
 
 " coc.vim
 highlight CocErrorSign ctermfg=15 ctermbg=196
@@ -75,12 +82,21 @@ let g:coc_global_extensions = [
   \ 'coc-tsserver',
   \ 'coc-docker',
   \]
+nnoremap <silent> K :call <SID>show_documentation()<CR>
+
+function! s:show_documentation()
+  if (index(['vim','help'], &filetype) >= 0)
+    execute 'h '.expand('<cword>')
+  else
+    call CocAction('doHover')
+  endif
+endfunction
 
 " vim-gitgutter
 highlight GitGutterAdd ctermfg=LightGreen ctermbg=NONE
-highlight GitGutterDeelte ctermfg=LightRed ctermbg=NONE
+highlight GitGutterDelete ctermfg=LightRed ctermbg=NONE
 let g:gitgutter_sign_allow_clobber = 1
-let g:gitgutter_sign_removed = '-'
+let g:gitgutter_sign_removed = '–'
 
 " fzf
 let g:fzf_action = {

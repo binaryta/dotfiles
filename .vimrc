@@ -21,7 +21,6 @@ set foldenable
 set foldmethod=manual
 set clipboard+=unnamed
 
-
 syntax on
 
 filetype on
