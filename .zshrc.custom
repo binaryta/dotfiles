@@ -11,6 +11,7 @@ alias yw="yarn workspace"
 alias vimh="vim +History"
 alias vimf="vim +Files"
 alias vimc="vim +Commands"
+alias tmuxn="tmux new -s `basename $PWD`"
 
 # k8s
 source <(kubectl completion zsh)
