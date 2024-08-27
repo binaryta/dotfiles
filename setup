@@ -18,13 +18,13 @@ brew bundle --no-lock --file ./Brewfile
 ln -sf $BASE/.tool-versions ~/.tool-versions
 xargs -I x asdf plugin add x < asdf-plugins.txt
 
+# Tmux
+rm -rf $HOME/.tmux.conf
+ln -sf $BASE/.tmux.conf $HOME/.tmux.conf
 
 # Vim
 rm -rf ~/.vimrc ~/.vim
-### install vim-plug
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-### symlinks
 ln -sf $BASE/.vimrc ~/.vimrc
 ln -sf $BASE/.vim/config ~/.vim/
-### install plugins
 vim +PlugInstall +qa
