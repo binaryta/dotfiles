@@ -10,6 +10,7 @@ augroup fileTypeIndent
   autocmd BufRead,BufNewFile *.vue           set filetype=vue.html.javascript.css
   autocmd BufRead,BufNewFile *.fxml          set filetype=xml
   autocmd BufRead,BufNewFile *.json.jbuilder set filetype=ruby
+  autocmd BufRead,BufNewFile Schemafile      set filetype=ruby
   autocmd BufRead,BufNewFile Brewfile        set filetype=ruby
   autocmd BufRead,BufNewFile *.{mjs}         set filetype=javascript
 augroup END
