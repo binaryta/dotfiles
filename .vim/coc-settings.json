@@ -8,5 +8,6 @@
   "git.blameUseRealTime": true,
   "git.addGBlameToVirtualText": true,
   "callHierarchy.enableTooltip": true,
-  "coc.preferences.jumpCommand": "tabnew"
+  "coc.preferences.jumpCommand": "tabnew",
+  "explorer.file.showHiddenFiles": true
 }
