@@ -58,7 +58,6 @@ let g:lightline = {
 
 " vim-code-dark
 let g:codedark_modern=1
-let g:codedark_italics=1
 let g:codedark_transparent=1
 colorscheme codedark
 
@@ -66,7 +65,10 @@ colorscheme codedark
 highlight CocErrorSign ctermfg=15 ctermbg=196
 highlight CocWarningSign ctermfg=0 ctermbg=172
 command! -nargs=0 Prettier :CocCommand prettier.forceFormatDocument
+command! -nargs=0 TsAutofix :CocCommand tsserver.executeAutoFix
+command! -nargs=0 CocExplorer :CocCommand explorer
 command! -nargs=? Fold :call     CocAction('fold', <f-args>)
+
 let g:coc_global_extensions = [
   \ 'coc-json',
   \ 'coc-html',
@@ -81,6 +83,7 @@ let g:coc_global_extensions = [
   \ 'coc-solargraph',
   \ 'coc-tsserver',
   \ 'coc-docker',
+  \ 'coc-explorer',
   \]
 nnoremap <silent> K :call <SID>show_documentation()<CR>
 
