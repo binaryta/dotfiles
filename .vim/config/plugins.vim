@@ -7,12 +7,13 @@ Plug 'tomasiser/vim-code-dark'
 
 " Syntax highlights
 Plug 'rust-lang/rust.vim'
-Plug 'leafgarland/typescript-vim'
 Plug 'cespare/vim-toml'
 Plug 'noprompt/vim-yardoc'
 Plug 'jparise/vim-graphql'
 Plug 'pantharshit00/vim-prisma'
 Plug 'isRuslan/vim-es6'
+Plug 'leafgarland/typescript-vim'
+Plug 'peitalin/vim-jsx-typescript'
 
 " Integrations
 Plug 'github/copilot.vim'
