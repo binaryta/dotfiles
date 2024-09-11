@@ -34,7 +34,9 @@ Plug 'junegunn/fzf.vim'
 Plug 'thinca/vim-quickrun'
 Plug 'vim-test/vim-test'
 Plug 'APZelos/blamer.nvim'
-
+Plug 'junkblocker/patchreview-vim'
+Plug 'codegram/vim-codereview'
+Plug 'bogado/file-line'
 call plug#end()
 
 " vim-rooter
