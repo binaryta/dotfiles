@@ -13,6 +13,7 @@ alias vimf="vim +Files"
 alias vimc="vim +Commands"
 alias vime="vim +CocExplorer"
 alias tmuxn="tmux new -s `basename $PWD`"
+alias lzd="lazydocker"
 
 # k8s
 source <(kubectl completion zsh)
