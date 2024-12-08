@@ -14,6 +14,7 @@ Plug 'pantharshit00/vim-prisma'
 Plug 'isRuslan/vim-es6'
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
+Plug 'google/vim-jsonnet'
 
 " Integrations
 Plug 'github/copilot.vim'

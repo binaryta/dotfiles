@@ -40,3 +40,4 @@ inoremap <expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
 vmap <leader>a  <Plug>(coc-codeaction-selected)
 nmap <leader>a  <Plug>(coc-codeaction-selected)
 nmap <space>e <Cmd>CocCommand explorer --preset .vim<CR>
+nmap <space>h <Cmd>History<CR>
