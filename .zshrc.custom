@@ -12,7 +12,7 @@ alias vimh="vim +History"
 alias vimf="vim +Files"
 alias vimc="vim +Commands"
 alias vime="vim +CocExplorer"
-alias tmuxn="tmux new -s `basename $PWD`"
+alias tmuxn="tmux-new-session-named-basename"
 alias lzd="lazydocker"
 
 # k8s
@@ -41,7 +41,7 @@ autoload -Uz compinit && compinit
 complete -C '/opt/homebrew/bin/aws_completer' aws
 
 # asdf
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 
 # custom shortcut
 function fzf-ghq() {
@@ -71,6 +71,11 @@ function fzf-yarn-workspace-packages() {
 }
 zle -N fzf-yarn-workspace-packages
 bindkey '^]y' fzf-yarn-workspace-packages
+
+function tmux-new-session-named-basename() {
+  local session_name=$(basename `pwd`)
+  tmux new -s $session_name
+}
 
 # mysql-client
 export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
