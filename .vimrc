@@ -18,7 +18,8 @@ set nowritebackup
 set signcolumn=yes
 set cursorline
 set foldenable
-set foldmethod=manual
+set foldmethod=indent
+set foldlevelstart=99
 set clipboard+=unnamed
 
 syntax on
@@ -26,3 +27,5 @@ syntax on
 filetype on
 filetype plugin on
 filetype indent on
+
+highlight Folded cterm=NONE ctermfg=244 ctermbg=235

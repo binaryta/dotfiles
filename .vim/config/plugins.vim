@@ -39,6 +39,13 @@ Plug 'APZelos/blamer.nvim'
 Plug 'junkblocker/patchreview-vim'
 Plug 'codegram/vim-codereview'
 Plug 'bogado/file-line'
+
+if has('nvim')
+  Plug 'nvim-lua/plenary.nvim'
+  Plug 'CopilotC-Nvim/CopilotChat.nvim'
+  Plug 'sindrets/diffview.nvim'
+endif
+
 call plug#end()
 
 " vim-rooter
