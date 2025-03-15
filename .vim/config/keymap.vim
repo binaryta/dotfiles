@@ -24,9 +24,6 @@ noremap -   <C-w>-
 " --- junegunn/fzf.vim
 nnoremap <silent> <space>f :Files <CR>
 
-" --- haya14busa/incsearch.vim
-map / <Plug>(incsearch-forward)
-
 " --- tomtom/tcomment_vim
 map ,, :TComment<CR>
 

@@ -18,5 +18,6 @@
       "rootPatterns": [".git", "Gemfile"],
       "requireRootPattern": true
     }
-  }
+  },
+  "snippets.ultisnips.pythonPrompt": false
 }

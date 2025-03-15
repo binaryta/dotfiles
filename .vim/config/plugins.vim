@@ -18,7 +18,6 @@ Plug 'google/vim-jsonnet'
 
 " Integrations
 Plug 'github/copilot.vim'
-Plug 'haya14busa/incsearch.vim'
 Plug 'tomtom/tcomment_vim'
 Plug 'Shougo/vimproc.vim'
 Plug 'zchee/deoplete-clang'
@@ -44,6 +43,8 @@ if has('nvim')
   Plug 'nvim-lua/plenary.nvim'
   Plug 'CopilotC-Nvim/CopilotChat.nvim'
   Plug 'sindrets/diffview.nvim'
+else
+  Plug 'haya14busa/incsearch.vim'
 endif
 
 call plug#end()
@@ -73,8 +74,9 @@ let g:codedark_transparent=1
 colorscheme codedark
 
 " coc.vim
-highlight CocErrorSign ctermfg=15 ctermbg=196
+highlight CocErrorSign ctermbg=52 ctermfg=217
 highlight CocWarningSign ctermfg=0 ctermbg=172
+highlight CocFloating ctermbg=235
 command! -nargs=0 Prettier :CocCommand prettier.forceFormatDocument
 command! -nargs=0 TsAutofix :CocCommand tsserver.executeAutoFix
 command! -nargs=0 CocExplorer :CocCommand explorer
@@ -95,6 +97,7 @@ let g:coc_global_extensions = [
   \ 'coc-tsserver',
   \ 'coc-docker',
   \ 'coc-explorer',
+  \ 'coc-lua',
   \]
 nnoremap <silent> K :call <SID>show_documentation()<CR>
 
