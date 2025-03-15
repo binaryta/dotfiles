@@ -2,6 +2,7 @@
   "coc.preferences.formatOnType": true,
   "javascript.suggest.autoImports": true,
   "typescript.suggest.autoImports": true,
+  "typescript.preferences.importModuleSpecifier": "non-relative",
   "coc.preferences.extensionUpdateCheck": "daily",
   "git.enableGutters": false,
   "git.blameUseRealTime": true,
