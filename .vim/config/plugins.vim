@@ -6,18 +6,8 @@ Plug 'wojciechkepka/vim-github-dark'
 Plug 'tomasiser/vim-code-dark'
 Plug 'Mofiqul/vscode.nvim'
 
-" Syntax highlights
-Plug 'rust-lang/rust.vim'
-Plug 'cespare/vim-toml'
-Plug 'noprompt/vim-yardoc'
-Plug 'jparise/vim-graphql'
-Plug 'pantharshit00/vim-prisma'
-Plug 'isRuslan/vim-es6'
-Plug 'leafgarland/typescript-vim'
-Plug 'peitalin/vim-jsx-typescript'
-Plug 'google/vim-jsonnet'
-
 " Integrations
+Plug 'sheerun/vim-polyglot'
 Plug 'github/copilot.vim'
 Plug 'tomtom/tcomment_vim'
 Plug 'Shougo/vimproc.vim'
