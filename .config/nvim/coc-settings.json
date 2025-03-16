@@ -17,6 +17,13 @@
       "filetypes": ["ruby"],
       "rootPatterns": [".git", "Gemfile"],
       "requireRootPattern": true
+    },
+    "ruby-lsp": {
+      "command": "ruby-lsp",
+      "initializationOptions": {
+        "formatter": "auto"
+      },
+      "filetypes": ["ruby"]
     }
   },
   "snippets.ultisnips.pythonPrompt": false
