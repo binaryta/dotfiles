@@ -1,0 +1,18 @@
+set main-view = id date author:email-user commit-title:graph=yes,refs=yes
+set blob-view-line-number = yes
+set line-graphics = utf-8
+set tab-size = 2
+set ignore-space = at-eol
+set ignore-case = true
+set diff-options = -m --first-parent
+set refresh-mode = auto
+bind generic g move-first-line
+bind generic G move-last-line
+set editor-line-number = yes
+set blame-view-line-number = yes
+set blame-view  = date:default author:email-user id:yes,color line-number:yes,interval=1 text
+set pager-view  = line-number:yes,interval=1 text
+set stage-view  = line-number:yes,interval=1 text
+set log-view    = line-number:yes,interval=1 text
+set blob-view   = line-number:yes,interval=1 text
+set diff-view   = line-number:yes,interval=1 text:yes,commit-title-overflow=no
