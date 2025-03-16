@@ -21,6 +21,7 @@ set foldenable
 set foldmethod=indent
 set foldlevelstart=99
 set clipboard+=unnamed
+set incsearch
 
 syntax on
 

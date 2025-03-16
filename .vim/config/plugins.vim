@@ -4,6 +4,7 @@ call plug#begin()
 Plug 'cocopon/iceberg.vim'
 Plug 'wojciechkepka/vim-github-dark'
 Plug 'tomasiser/vim-code-dark'
+Plug 'Mofiqul/vscode.nvim'
 
 " Syntax highlights
 Plug 'rust-lang/rust.vim'
@@ -25,16 +26,12 @@ Plug 'airblade/vim-rooter'
 Plug 'itchyny/lightline.vim'
 Plug 'tmhedberg/matchit'
 Plug 'Shougo/unite.vim'
-Plug 'jeetsukumaran/vim-buffergator'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-Plug 'thinca/vim-quickrun'
-Plug 'vim-test/vim-test'
-Plug 'APZelos/blamer.nvim'
 Plug 'junkblocker/patchreview-vim'
 Plug 'codegram/vim-codereview'
 Plug 'bogado/file-line'
@@ -68,10 +65,11 @@ let g:lightline = {
 " colorscheme ghdark
 " au Colorscheme ghdark hi Visual cterm=NONE ctermbg=237 ctermfg=NONE
 
-" vim-code-dark
-let g:codedark_modern=1
-let g:codedark_transparent=1
-colorscheme codedark
+if $TERM_PROGRAM == 'tmux'
+  colorscheme vscode
+else
+  colorscheme codedark
+endif
 
 " coc.vim
 highlight CocErrorSign ctermbg=52 ctermfg=217
@@ -120,8 +118,3 @@ let g:fzf_action = {
   \ 'ctrl-t': 'tab split',
   \ 'ctrl-x': 'split',
   \ 'ctrl-v': 'vsplit' }
-
-" blamer.nvim
-" let g:blamer_enabled = 1
-" let g:blamer_delay = 100
-" let g:blamer_date_format = '%Y-%m-%d'

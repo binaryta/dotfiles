@@ -23,6 +23,9 @@ noremap -   <C-w>-
 
 " --- junegunn/fzf.vim
 nnoremap <silent> <space>f :Files <CR>
+nnoremap <silent> <space>gg :RG <CR>
+nnoremap <silent> <space>gs :execute "GFiles?" <CR>
+nnoremap <silent> <space>b :Buffers <CR>
 
 " --- tomtom/tcomment_vim
 map ,, :TComment<CR>
