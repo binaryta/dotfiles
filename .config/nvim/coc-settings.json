@@ -3,7 +3,7 @@
   "javascript.suggest.autoImports": true,
   "typescript.suggest.autoImports": true,
   "typescript.preferences.importModuleSpecifier": "non-relative",
-  "coc.preferences.extensionUpdateCheck": "daily",
+  "extensions.updateCheck": "daily",
   "git.enableGutters": false,
   "git.blameUseRealTime": true,
   "git.addGBlameToVirtualText": true,
@@ -26,5 +26,6 @@
       "filetypes": ["ruby"]
     }
   },
-  "snippets.ultisnips.pythonPrompt": false
+  "snippets.ultisnips.pythonPrompt": false,
+  "Lua.diagnostics.globals": ["vim", "use"]
 }
