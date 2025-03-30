@@ -18,6 +18,7 @@ brew bundle --no-lock --file ./Brewfile
 # Version Manager
 ln -sf $BASE/.tool-versions ~/.tool-versions
 xargs -I x asdf plugin add x < asdf-plugins.txt
+asdf install
 
 # Tmux
 rm -rf $HOME/.tmux.conf
