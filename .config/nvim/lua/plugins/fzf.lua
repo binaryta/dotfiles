@@ -2,6 +2,7 @@ return {
   "junegunn/fzf",
   dir = "/opt/homebrew/opt/fzf",
   build = "./install --all",
+  lazy = false,
   dependencies = {
     { "junegunn/fzf.vim" },
   },
