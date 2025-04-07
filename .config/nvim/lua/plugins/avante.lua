@@ -16,28 +16,20 @@ return {
     },
     windows = {
       position = "right",
-      wrap = true,
-      width = 30,
-      sidebar_header = {
-        enabled = true,
-        align = "center",
-        rounded = true,
-      },
-      input = {
-        prefix = "> ",
-        height = 8,
-      },
-      edit = {
-        border = "rounded",
-        start_insert = true,
-      },
-      ask = {
-        floating = false,
-        start_insert = true,
-        border = "rounded",
-        focus_on_apply = "ours",
-      },
+      width = 40,
     },
+    ollama = {
+      model = "deepseek-r1:7b",
+    },
+    system_prompt = function()
+      local hub = require("mcphub").get_hub_instance()
+      return hub:get_active_servers_prompt()
+    end,
+    custom_tools = function()
+      return {
+        require("mcphub.extensions.avante").mcp_tool(),
+      }
+    end,
   },
   build = "make",
   dependencies = {
