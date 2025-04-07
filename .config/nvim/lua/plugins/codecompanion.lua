@@ -6,18 +6,20 @@ return {
     "nvim-treesitter/nvim-treesitter",
     "j-hui/fidget.nvim",
   },
-  strategies = {
-    chat = {
-      adapter = "copilot",
+  opts = {
+    strategies = {
+      chat = {
+        adapter = "copilot",
+      },
+      inline = {
+        adapter = "copilot",
+      },
+      cmd = {
+        adapter = "copilot",
+      },
     },
-    inline = {
-      adapter = "copilot",
-    },
-    cmd = {
-      adapter = "copilot",
-    },
+    language = 'Japanese',
   },
-  prompt = {},
   init = function()
     require("plugins.codecompanion.fidget-spinner"):init()
   end,
