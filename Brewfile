@@ -6,6 +6,7 @@ tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "jorgerojas26/lazysql"
+tap "localstack/tap"
 tap "mas-cli/tap"
 tap "michaelroosz/ssh"
 tap "microsoft/git"
@@ -79,6 +80,7 @@ brew "yq"
 brew "aoki/redis-cli/redis-cli"
 brew "aquaproj/aqua/aqua"
 brew "dagger/tap/dagger"
+brew "localstack/tap/localstack-cli"
 brew "mike-engel/jwt-cli/jwt-cli"
 cask "flipper"
 cask "font-hack-nerd-font"
@@ -89,13 +91,6 @@ cask "gpg-suite"
 cask "ngrok"
 cask "visual-studio-code"
 cask "zulu@17"
-mas "Developer", id: 640199958
-mas "GarageBand", id: 682658836
-mas "Keynote", id: 409183694
-mas "Numbers", id: 409203825
-mas "Pages", id: 409201541
-mas "Sequel Ace", id: 1518036000
-mas "Xcode", id: 497799835
 vscode "42crunch.vscode-openapi"
 vscode "amazonwebservices.amazon-q-vscode"
 vscode "amazonwebservices.aws-toolkit-vscode"
