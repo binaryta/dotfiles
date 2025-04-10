@@ -8,6 +8,7 @@ return {
   build = "make tiktoken",
   cmd = { "CopilotChat", "CopilotChatToggle" },
   opts = {
+    model = "DeepSeek-V3-0324",
     prompts = {
       Explain = {
         prompt = "コードを日本語で説明してください",
