@@ -18,7 +18,7 @@ return {
         adapter = "copilot",
       },
     },
-    language = 'Japanese',
+    language = "Japanese",
   },
   init = function()
     require("plugins.codecompanion.fidget-spinner"):init()
