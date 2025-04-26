@@ -25,6 +25,7 @@ opt.clipboard:append("unnamed")
 opt.incsearch = true
 opt.errorbells = false
 opt.guicursor = "n-v-c:block"
+opt.mouse = ""
 
 if vim.env.TERM_PROGRAM == "tmux" then
   opt.termguicolors = true
