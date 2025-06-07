@@ -30,6 +30,7 @@ return {
     vim.api.nvim_set_keymap("v", "<leader>a", "<Plug>(coc-codeaction-selected)", {})
     vim.api.nvim_set_keymap("n", "<leader>a", "<Plug>(coc-codeaction-selected)", {})
     vim.api.nvim_set_keymap("n", "<space>e", "<Cmd>CocCommand explorer --preset .vim<CR>", opts)
+    vim.api.nvim_set_keymap("n", "<leader>r", "<Plug>(coc-rename)", opts)
     vim.keymap.set("i", "<CR>", function()
       return vim.fn["coc#pum#visible"]() == 1 and vim.fn["coc#pum#confirm"]() or "<CR>"
     end, { expr = true, noremap = true })
