@@ -18,7 +18,6 @@ vim.opt.rtp:prepend(lazypath)
 -- Setup lazy.nvim
 require("lazy").setup({
   spec = {
-    "sheerun/vim-polyglot",
     "Shougo/vimproc.vim",
     "sindrets/diffview.nvim",
     "David-Kunz/jester",
