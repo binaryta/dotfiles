@@ -29,6 +29,7 @@ require("lazy").setup({
     "HakonHarnes/img-clip.nvim",
     "tpope/vim-fugitive",
     "airblade/vim-gitgutter",
+    "prisma/vim-prisma",
     { import = "plugins" },
   },
   install = { colorscheme = { "habamax" } },

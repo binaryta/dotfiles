@@ -22,6 +22,7 @@
   "vim-fugitive": { "branch": "master", "commit": "593f831d6f6d779cbabb70a4d1e6b1b1936a88af" },
   "vim-gitgutter": { "branch": "main", "commit": "85ca3a087204e3a32cb2faa5d9d0451524e08720" },
   "vim-polyglot": { "branch": "master", "commit": "f5393cfee07aeb666f4d75f9b3a83163862fb094" },
+  "vim-prisma": { "branch": "main", "commit": "95c5b25066efb34c75bce78698baa371fe0ee7c2" },
   "vim-translator": { "branch": "master", "commit": "6f0639c6d471a3a90ac19db96e1e379c030f74e3" },
   "vimproc.vim": { "branch": "master", "commit": "63a4ce0768c7af434ac53d37bdc1e7ff7fd2bece" },
   "vscode.nvim": { "branch": "main", "commit": "4d1c3c64d1afddd7934fb0e687fd9557fc66be41" }
