@@ -1,6 +1,7 @@
 ecspresso
 ghq
 golang
+lua-language-server
 nodejs
 python
 ruby
