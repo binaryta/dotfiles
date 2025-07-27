@@ -23,7 +23,6 @@ require("lazy").setup({
     "David-Kunz/jester",
     "stevearc/dressing.nvim",
     "MunifTanjim/nui.nvim",
-    "MeanderingProgrammer/render-markdown.nvim",
     "hrsh7th/nvim-cmp",
     "nvim-tree/nvim-web-devicons",
     "HakonHarnes/img-clip.nvim",
