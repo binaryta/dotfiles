@@ -34,5 +34,9 @@
     }
   },
   "snippets.ultisnips.pythonPrompt": false,
+  "floatFactory.floatConfig": {
+    "border": true,
+    "rounded": true
+  },
   "Lua.diagnostics.globals": ["vim", "use"]
 }
