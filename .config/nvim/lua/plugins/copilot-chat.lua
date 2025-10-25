@@ -8,7 +8,7 @@ return {
   build = "make tiktoken",
   cmd = { "CopilotChat", "CopilotChatToggle" },
   opts = {
-    model = "claude-3.7-sonnet-thought",
+    model = "gpt-4o",
     prompts = {
       Explain = {
         prompt = "コードを日本語で説明してください",

@@ -17,7 +17,7 @@ return {
           dismiss = "<C-]>",
         },
       },
-      copilot_model = "claude-3.7-sonnet-thought",
+      copilot_model = "gpt-4o",
     })
   end,
 }
