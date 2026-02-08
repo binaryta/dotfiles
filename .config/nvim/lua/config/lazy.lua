@@ -28,6 +28,7 @@ require("lazy").setup({
     "tpope/vim-fugitive",
     "airblade/vim-gitgutter",
     "prisma/vim-prisma",
+    "imsnif/kdl.vim",
     { import = "plugins" },
   },
   install = { colorscheme = { "habamax" } },
