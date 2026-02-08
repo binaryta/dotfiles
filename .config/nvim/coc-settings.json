@@ -38,5 +38,9 @@
     "border": true,
     "rounded": true
   },
-  "Lua.diagnostics.globals": ["vim", "use"]
+  "Lua.diagnostics.globals": ["vim", "use"],
+  "prisma": {
+    "enableDiagnostics": true,
+    "prismaFmtBinPath": ""
+  }
 }
