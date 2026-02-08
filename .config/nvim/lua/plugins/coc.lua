@@ -19,6 +19,7 @@ return {
       "coc-explorer",
       "coc-lua",
       "coc-stylua",
+      "coc-rust-analyzer",
     }
 
     local opts = { noremap = true, silent = true }

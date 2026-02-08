@@ -20,7 +20,6 @@ require("lazy").setup({
   spec = {
     "Shougo/vimproc.vim",
     "sindrets/diffview.nvim",
-    "David-Kunz/jester",
     "stevearc/dressing.nvim",
     "MunifTanjim/nui.nvim",
     "hrsh7th/nvim-cmp",
