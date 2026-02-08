@@ -2,39 +2,44 @@
 cd $(dirname $BASH_SOURCE)
 BASE=$(pwd)
  
-# Zsh
-rm -rf $HOME/.zshrc
-ln -sf $BASE/.zshrc $HOME/.zshrc
-ln -sf $BASE/.zshenv $HOME/.zshenv
-ln -sf $BASE/.zshrc.custom $HOME/.zshrc.custom
-ln -sf $BASE/.zshrc.brewbundle $HOME/.zshrc.brewbundle
-touch $HOME/.zshrc.env
+# # Zsh
+# rm -rf $HOME/.zshrc
+# ln -sf $BASE/.zshrc $HOME/.zshrc
+# ln -sf $BASE/.zshenv $HOME/.zshenv
+# ln -sf $BASE/.zshrc.custom $HOME/.zshrc.custom
+# ln -sf $BASE/.zshrc.brewbundle $HOME/.zshrc.brewbundle
+# touch $HOME/.zshrc.env
 
-# Homebrew
-source $HOME/.zshrc.brewbundle
-brew update
-brew bundle --no-lock --file ./Brewfile
+# # Homebrew
+# source $HOME/.zshrc.brewbundle
+# brew update
+# brew bundle --no-lock --file ./Brewfile
 
-# Version Manager
-ln -sf $BASE/.tool-versions ~/.tool-versions
-xargs -I x asdf plugin add x < asdf-plugins.txt
-asdf install
+# # Version Manager
+# ln -sf $BASE/.tool-versions ~/.tool-versions
+# xargs -I x asdf plugin add x < asdf-plugins.txt
+# asdf install
 
-# Tmux
-rm -rf $HOME/.tmux.conf
-ln -sf $BASE/.tmux.conf $HOME/.tmux.conf
+# # Tmux
+# rm -rf $HOME/.tmux.conf
+# ln -sf $BASE/.tmux.conf $HOME/.tmux.conf
+
+# Zellij
+mkdir -p $HOME/.config/zellij
+rm -rf $HOME/.config/zellij/config.kdl
+ln -sf $BASE/.config/zellij/config.kdl $HOME/.config/zellij/config.kdl
 
 # Vim & Neovim common setup
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-ln -sf $BASE/.vimrc ~/.vimrc
-ln -sf $BASE/.vim/config ~/.vim/
-ln -sf $BASE/.vim/coc-settings.json ~/.vim/coc-settings.json
+# curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+# ln -sf $BASE/.vimrc ~/.vimrc
+# ln -sf $BASE/.vim/config ~/.vim/
+# ln -sf $BASE/.vim/coc-settings.json ~/.vim/coc-settings.json
 
-# Vim
-# rm -rf ~/.vimrc ~/.vim
-# vim +PlugInstall +qa
+# # Vim
+# # rm -rf ~/.vimrc ~/.vim
+# # vim +PlugInstall +qa
 
-# Neovim
-rm -rf ~/.config/nvim
-ln -sf $BASE/.config/nvim ~/.config/nvim
-nvim +PlugInstall +qa
+# # Neovim
+# rm -rf ~/.config/nvim
+# ln -sf $BASE/.config/nvim ~/.config/nvim
+# nvim +PlugInstall +qa
