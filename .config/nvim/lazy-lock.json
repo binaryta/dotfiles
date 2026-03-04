@@ -1,7 +1,8 @@
 {
   "CopilotChat.nvim": { "branch": "main", "commit": "743d6005fb412c85309d3f3aa45f18f3a2fb2098" },
+  "aerial.nvim": { "branch": "master", "commit": "645d108a5242ec7b378cbe643eb6d04d4223f034" },
   "coc.nvim": { "branch": "release", "commit": "f36328bb5c75c2272872e6f236cbb6f4f85262af" },
-  "copilot.lua": { "branch": "master", "commit": "00446a63cba4cc59bb24fc1e210a555a3e4acdfb" },
+  "copilot.lua": { "branch": "master", "commit": "3061c49e0e2619915af90fb5a067cac90a20e896" },
   "cyberdream.nvim": { "branch": "main", "commit": "a68ffa6af98bf1fc88f33a071c51a188ec85c725" },
   "diffview.nvim": { "branch": "main", "commit": "4516612fe98ff56ae0415a259ff6361a89419b0a" },
   "dressing.nvim": { "branch": "master", "commit": "2d7c2db2507fa3c4956142ee607431ddb2828639" },
