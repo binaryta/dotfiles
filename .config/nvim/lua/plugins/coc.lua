@@ -20,6 +20,7 @@ return {
       "coc-lua",
       "coc-stylua",
       "coc-rust-analyzer",
+      "coc-sh",
     }
 
     local opts = { noremap = true, silent = true }
