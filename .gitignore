@@ -3,3 +3,5 @@
 .vim/plugged
 Brewfile.lock.json
 .zshrc.env
+.nvimlog
+nvim.log

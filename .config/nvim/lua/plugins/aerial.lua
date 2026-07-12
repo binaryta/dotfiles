@@ -1,5 +1,6 @@
 return {
   "stevearc/aerial.nvim",
+  branch = "nvim-0.11",
   opts = {
     layout = {
       default_direction = "left",
