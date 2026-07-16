@@ -25,7 +25,6 @@ require("lazy").setup({
     "nvim-tree/nvim-web-devicons",
     "HakonHarnes/img-clip.nvim",
     "tpope/vim-fugitive",
-    "airblade/vim-gitgutter",
     "imsnif/kdl.vim",
     "vim-scripts/copypath.vim",
     { import = "plugins" },
