@@ -6,6 +6,18 @@ if ok_blink then
   vim.lsp.config("*", { capabilities = blink.get_lsp_capabilities() })
 end
 
+-- 診断フロートの自動表示
+vim.api.nvim_create_autocmd("CursorHold", {
+  group = vim.api.nvim_create_augroup("my.diagnostic.float", { clear = true }),
+  callback = function()
+    vim.diagnostic.open_float({
+      focus = false,
+      scope = "cursor",
+      border = "rounded",
+    })
+  end,
+})
+
 -- LSP アタッチ時の共通設定
 vim.api.nvim_create_autocmd("LspAttach", {
   group = vim.api.nvim_create_augroup("my.lsp", {}),
